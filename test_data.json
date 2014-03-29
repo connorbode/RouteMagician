@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Parc Jarry",
+    "lat": 45.535412, 
+    "lng": -73.628481
+  },
+  {
+    "name": "Maria's House",
+    "lat": 45.511266, 
+    "lng": -73.577085
+  },
+  {
+    "name": "Atlas Pizza",
+    "lat": 45.523530, 
+    "lng": -73.573749
+  },
+  {
+    "name": "Chalice Palace",
+    "lat": 45.532588, 
+    "lng": -73.566510
+  },
+  {
+    "name": "514 BMX",
+    "lat": 45.471846,
+    "lng": -73.613330
+  },
+  {
+    "name": "Concordia Archives",
+    "lat": 45.493757, 
+    "lng": -73.573456
+  },
+  {
+    "name": "Al-Taib Express",
+    "lat": 45.496592,
+    "lng": -73.579078
+  }
+]
