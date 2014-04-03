@@ -1,0 +1,24 @@
+
+[1mFrom:[0m /home/connorbode/Workspaces/Play/RouteMagician/RouteMagician.rb @ line 35 RouteMagician#compute:
+
+    [1;34m25[0m: [1;31mdef[0m [1;34mcompute[0m
+    [1;34m26[0m:   data = [1;34m[4mDataSet[0m.new [1;32m:data_items[0m => @data, [1;32m:data_labels[0m => [[32m[1;32m"[0m[32mname[1;32m"[0m[32m[0m, [[32m[1;32m"[0m[32mX[1;32m"[0m[32m[0m, [32m[1;32m"[0m[32mY[1;32m"[0m[32m[0m]]
+    [1;34m27[0m:   clusterer = [1;34m[4mKMeans[0m.new.build(data, @deliverers)
+    [1;34m28[0m: 
+    [1;34m29[0m:   p [32m[1;32m"[0m[32mbuilding #{@deliverers}[0m[32m clusters[1;32m"[0m[32m[0m
+    [1;34m30[0m: 
+    [1;34m31[0m:   response = []
+    [1;34m32[0m: 
+    [1;34m33[0m:   @data.each [1;31mdo[0m |d|
+    [1;34m34[0m:     require [32m[1;32m'[0m[32mpry-debugger[1;32m'[0m[32m[0m; binding.pry
+ => [1;34m35[0m:     cluster = clusterer.eval(d) [0;34m# figure out which cluster the item belongs to[0m
+    [1;34m36[0m:     p [32m[1;32m"[0m[32m#{d[[1;34m0[0m]}[0m[32m goes in cluster #{cluster}[0m[32m[1;32m"[0m[32m[0m
+    [1;34m37[0m:     response[cluster] = [] [1;31munless[0m response[cluster].kind_of?([1;34m[4mArray[0m) 
+    [1;34m38[0m:     response[cluster] << d
+    [1;34m39[0m:   [1;31mend[0m
+    [1;34m40[0m: 
+    [1;34m41[0m:   [0;34m# require 'pry-debugger'; binding.pry[0m
+    [1;34m42[0m: 
+    [1;34m43[0m:   response
+    [1;34m44[0m: [1;31mend[0m
+
